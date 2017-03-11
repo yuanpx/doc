@@ -1,0 +1,17 @@
+snapper -c root set-config "TIMELINE_CREATE=yes"
+snapper -c root set-config "TIMELINE_CREATE=no"
+/etc/sysconfig/yast2: USE_SNAPPER=yes
+/etc/sysconfig/yast2: USE_SNAPPER=no
+
+snapper list -t pre-post
+snapper status PRE..POST
+snapper diff PRE..POST FILENAME
+snapper -v undochange PRE..POST FILENAMES
+snapper rollback
+snapper modify --userdata "str" NUMBER
+snapper list-configs
+snapper --config CONFIG --command COMMAND create
+snapper --config CONFIG modify
+snapper --config CONFIG delete
+/etc/snapper/configs
+
