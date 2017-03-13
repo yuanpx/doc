@@ -1,0 +1,7 @@
+*  Structure
+  struct object_t: 对应于底层文件系统的一个文件。
+  struct sobject_t: 加了snapshot相关信息的object_t。
+  struct hobject_t: hash object
+  struct ghobject_t: 在hobject的基础上，添加了generation字段和shard_id的字段。
+  struct pg_shard_t:
+  

@@ -1,0 +1,31 @@
+*  Xen
+**  Xem Hypervisor
+**  Dom0
+   suse linux
+   xl
+   qemu
+**  Xen-Based virtual Machines(VM Guest or DomU)
+   virtual disk
+   config file
+   network devices
+**  Management Tools,Commands,Config Files
+ 
+*  KVM 
+**  command
+   grep --color -Ew 'svm|vmx|lm' /proc/cpuinfo
+   lsmod | grep kvm
+   systemctl enable libvirtd 
+   systemctl start libvirtd
+   virt-host-validate
+   /dev/kvm
+   /dev/vhost-net
+   /dev/net/tun
+   virsh
+   virsh start | stop
+   virsh memstat | cpustat
+   virsh capabilities | nodeinfo
+   virsh net-list | net-define
+   virsh pool-list | pool-define
+   virsh create-snapshot-as
+   virsh domcapabilities
+
