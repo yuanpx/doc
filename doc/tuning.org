@@ -1,0 +1,9 @@
+*  vmstat
+  r: nubmer of processes in the run queue
+  b: number of blocked processes 
+  swpd: the amount of swap space currently used
+  free: the amount of unused memory.
+  inat: Recently unused memory that can be reclaimed. enable with -a param.
+  active: Recently used memory that does not get reclaimed. enable with -a param.
+  buff: file buffer cache in ram. disable with -a param.
+  cache: Page cache in RAM.
