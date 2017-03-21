@@ -1,0 +1,73 @@
+probe event {statements}
+syscall.system_call
+vfs.file_operation
+kernel.function("function")
+probe kernel.function("*@net/socket.c")
+begin
+end
+timer events
+execname()
+pid()
+tid()
+uid()
+cpu()
+gettimeofday_s()
+ctime()
+pp()
+thread_indent()
+name: syscall.system_call
+target()
+global
+-L
+@var("varname@src/file.c")
+kernel_char(address)
+kernel_short(address)
+kernel_int(address)
+kernel_long(address)
+kernel_string(address)
+kernel_string_n(address)
+$$vars
+$$local
+$$return 
+$flags
+
+if (condition)
+statement1
+else
+statement2
+
+while(condition)
+statement
+
+for (initializeation; conditional; increment) statement
+@1
+@2
+$1
+$2
+array_name[index_expression]
+foreach(item in array)
+statement
+delete array_name
+
+if ([item] in array_name)
+statement
+
+array[item] <<< count
+@extractor(variable/array index expression)
+
+process("PATH").function("function")
+process("PATH").statement("statement")
+process("PATH").mark("marker")
+process.begin
+process.thread.begin
+process.end
+process.thread.end
+process.syscall
+
+user_char(address)
+user_short(address)
+user_int(address)
+user_long(address)
+user_string(address)
+user_string_n(address)
+
