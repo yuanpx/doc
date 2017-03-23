@@ -6,6 +6,7 @@ probe kernel.function("*@net/socket.c")
 begin
 end
 timer events
+argstr
 execname()
 pid()
 tid()

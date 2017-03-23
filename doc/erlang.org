@@ -1,0 +1,6 @@
+ErtsAsync
+ErtsAsyncReadyQXData
+ErtsAsyncReadyQ
+ErtsAsyncQ
+ErtsAsyncInit
+ErtsAsyncData
